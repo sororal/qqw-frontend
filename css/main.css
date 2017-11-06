@@ -1,0 +1,229 @@
+.bar {
+  height: 2rem;
+  width: 100;
+  background-color: #110046;
+}
+
+div.landing-jumbotron {
+  background: url(../images/fondo-home.png) no-repeat center center fixed;
+  height: auto;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-blend-mode: lighten;
+}
+
+div.landing-header-content {
+  padding: 4rem;
+  width: 75%;
+  text-align: center;
+  margin: auto;
+}
+
+div.landing-header-content img {
+  height: 10rem;
+  width: auto;
+  vertical-align: middle;
+}
+
+div.landing-header-content h1 {
+  display: inline-block;
+  margin-left: 1rem;
+  font-size: 4rem;
+}
+
+div.landing-header-content p {
+  display: inline-block;
+  margin: 4rem auto 5rem auto;
+  font-size: 1.5rem;
+  color: #5c5c5c;
+  text-align: justify;
+}
+
+div.landing-search {
+  text-align: left;
+}
+
+div.landing-search p:first-child {
+  font-size: 1.2rem;
+  color: #2d1c9d;
+  margin: 1rem auto 1rem auto;
+}
+
+div.landing-search p {
+  font-size: .8rem;
+  color: #2d1c9d;
+  margin: 1rem auto 1rem auto;
+}
+
+input[type=text].landing-search-inputtext {
+    width: 80%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    display: inline-block;
+    border-color: #2b00f7;
+}
+
+input[type=submit].landing-search-inputtext {
+    width: 15%;
+    padding: 14px 20px;
+    box-sizing: border-box;
+    display: inline-block;
+    background-color: #2b00f7;
+    border: none;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+}
+
+div.explore-data-content {
+  display: block;
+  margin: 4rem auto;
+  width: 90%;
+}
+
+div.explore-card {
+  height: 23rem;
+  width: 20rem;
+}
+
+div.card-pad h3, div.card-pad h4 {
+  color: #2b00f7;
+  font-family: monospace;
+}
+
+div.card-pad h3 {
+  font-size: 2rem;
+  margin-bottom: .2rem;
+}
+
+div.card-pad h4 {
+  font-size: 1.5rem;
+  margin-bottom: .7rem;
+}
+
+div.card-pad button {
+  background-color: #2b00f7;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  padding: 14px 14px;
+  position: absolute;
+  bottom: 25px;
+  right: 25px;
+}
+
+div.card-pad p {
+  font-family: serif;
+  color: #5c5c5c;
+}
+
+section.proyectos {
+  background-color: #21018b;
+}
+
+
+/* General styles */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+.block {
+  display: block;
+  margin: auto;
+  content: "";
+  width: auto;
+}
+
+.card {
+  border-width: 2px;
+  border-style: dotted;
+  border-color: #3a32f9;
+  position: relative;
+}
+
+.card-pad {
+  padding: 1rem;
+}
+
+.card-image {
+  width: 100%;
+  height: 10rem;
+  overflow-y: hidden;
+}
+
+/* Responsive Grid Styles */
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+    float: left;
+}
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+
+/* Custom breakpoints */
+
+@media only screen and (max-width: 1120px) {
+  div.explore-card {
+    width: 18rem;
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  div.explore-card {
+    width: 16rem;
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  div.explore-card {
+    height: 24rem;
+    width: 14rem;
+  }
+}
