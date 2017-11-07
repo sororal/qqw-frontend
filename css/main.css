@@ -80,12 +80,12 @@ input[type=submit].landing-search-inputtext {
 
 div.explore-data-content {
   display: block;
-  margin: 4rem auto;
-  width: 90%;
+  margin: 4rem auto 2rem auto;
+  width: 85%;
 }
 
 div.explore-card {
-  height: 23rem;
+  height: 24rem;
   width: 20rem;
 }
 
@@ -104,24 +104,73 @@ div.card-pad h4 {
   margin-bottom: .7rem;
 }
 
-div.card-pad button {
-  background-color: #2b00f7;
-  color: #fff;
-  font-weight: bold;
-  border: none;
-  padding: 14px 14px;
-  position: absolute;
-  bottom: 25px;
-  right: 25px;
-}
-
-div.card-pad p {
+.serif-gray {
   font-family: serif;
   color: #5c5c5c;
 }
 
 section.proyectos {
   background-color: #21018b;
+}
+
+div.proyectos-content {
+  width: 85%;
+}
+
+.proyectos h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #fff;
+  padding: 2rem 0 2rem 0;
+}
+
+div.proyecto {
+  background-color: #fff;
+  padding: 1rem;
+  height: 15rem;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+div.proyecto img {
+  height: 100%;
+  width: auto;
+}
+
+div.proyecto p {
+  font-size: 1.3rem;
+}
+
+
+/*Card styles*/
+
+.card {
+  border-width: 2px;
+  border-style: dotted;
+  border-color: #3a32f9;
+  position: relative;
+}
+
+.card-pad {
+  padding: 1rem;
+}
+
+.card-pad button {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+}
+
+.card img {
+  white-space: nowrap;
+}
+
+.card-image {
+  display: inline-block;
+  width: 20rem;
+  height: 10rem;
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 
@@ -139,6 +188,8 @@ button {
   cursor: pointer;
 }
 
+/* Custom re-usable styles */
+
 .block {
   display: block;
   margin: auto;
@@ -146,22 +197,14 @@ button {
   width: auto;
 }
 
-.card {
-  border-width: 2px;
-  border-style: dotted;
-  border-color: #3a32f9;
-  position: relative;
+.button-link {
+  background-color: #2b00f7;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  padding: 14px 14px;
 }
 
-.card-pad {
-  padding: 1rem;
-}
-
-.card-image {
-  width: 100%;
-  height: 10rem;
-  overflow-y: hidden;
-}
 
 /* Responsive Grid Styles */
 
@@ -209,21 +252,29 @@ button {
 
 /* Custom breakpoints */
 
-@media only screen and (max-width: 1120px) {
+@media only screen and (max-width: 1160px) {
   div.explore-card {
-    width: 18rem;
+    width: 100%;
+  }
+
+
+
+}
+
+@media only screen and (max-width: 1042px) {
+  div.explore-card {
+    height: 26rem;
   }
 }
 
-@media only screen and (max-width: 990px) {
-  div.explore-card {
-    width: 16rem;
+@media only screen and (max-width: 870px) {
+  .button-link {
+    padding: 9px;
   }
 }
 
-@media only screen and (max-width: 990px) {
-  div.explore-card {
-    height: 24rem;
-    width: 14rem;
+@media only screen and (max-width: 800px) {
+  .button-link {
+    padding: 5px;
   }
 }
