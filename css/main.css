@@ -127,19 +127,32 @@ div.proyectos-content {
 div.proyecto {
   background-color: #fff;
   padding: 1rem;
-  height: 15rem;
   width: 100%;
   margin-bottom: 2rem;
+  position: relative;
 }
 
 div.proyecto img {
-  height: 100%;
-  width: auto;
+  width: 90%;
 }
 
 div.proyecto p {
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  padding: 1rem 1.5rem 0 0;
+  top: 15%;
   font-size: 1.3rem;
 }
+
+.proyecto-info {
+  position: absolute;
+}
+
+.proyecto button {
+  bottom: 30px;
+  right: 30px;
+}
+
 
 
 /*Card styles*/
@@ -216,7 +229,7 @@ button {
     width: 100%;
     float: left;
 }
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 768px) {
     /* For tablets: */
     .col-m-1 {width: 8.33%;}
     .col-m-2 {width: 16.66%;}
@@ -230,8 +243,9 @@ button {
     .col-m-10 {width: 83.33%;}
     .col-m-11 {width: 91.66%;}
     .col-m-12 {width: 100%;}
+
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1300px) {
     /* For desktop: */
     .col-1 {width: 8.33%;}
     .col-2 {width: 16.66%;}
@@ -254,8 +268,14 @@ button {
     width: 100%;
   }
 
-
-
+  .proyecto-info {
+    position: relative;
+  }
+  .proyecto button {
+    width: 100%;
+    bottom: 0;
+    right: 0;
+  }
 }
 
 @media only screen and (max-width: 1042px) {
@@ -265,17 +285,18 @@ button {
   .card-image {
     display: none;
   }
+
 }
 
 @media only screen and (max-width: 870px) {
-  .button-link {
+  .explore-card.button-link {
     padding: 9px;
     font-size: .7rem;
   }
 }
 
 @media only screen and (max-width: 800px) {
-  .button-link {
+  .explore-card.button-link {
     color: #2b00f7;
     background-color: #fff;
   }
@@ -283,10 +304,21 @@ button {
 
 
 @media only screen and (max-width: 768px) {
-  .button-link {
+  .explore-card.button-link {
     color: #fff;
     background-color: #2b00f7;
     padding: 14px 14px;
     font-size: .9rem;
+  }
+  div.proyecto img {
+    width: 15rem;
+    display: block;
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  div.proyectos-content {
+    width: 95%;
   }
 }
