@@ -1,3 +1,5 @@
+/*header section*/
+
 .bar {
   height: 2rem;
   width: 100;
@@ -78,11 +80,7 @@ input[type=submit].landing-search-inputtext {
     cursor: pointer;
 }
 
-div.explore-data-content {
-  display: block;
-  margin: 4rem auto 2rem auto;
-  width: 85%;
-}
+/*explore data section*/
 
 div.explore-card {
   height: 24rem;
@@ -109,19 +107,14 @@ div.card-pad h4 {
   color: #5c5c5c;
 }
 
+/*Proyecto styles*/
+
 section.proyectos {
   background-color: #21018b;
 }
 
-div.proyectos-content {
-  width: 85%;
-}
-
 .proyectos h2 {
-  font-size: 2.5rem;
-  font-weight: bold;
   color: #fff;
-  padding: 2rem 0 2rem 0;
 }
 
 div.proyecto {
@@ -153,6 +146,64 @@ div.proyecto p {
   right: 30px;
 }
 
+/*contacto section*/
+
+.contacto-text {
+  width: 80%;
+  margin: 2rem auto 3rem auto;
+  text-align: center;
+}
+
+.contacto-text p {
+  display: inline-block;
+  color: #3a32f9;
+  font-family: monospace;
+  font-size: 2rem;
+  /*margin-right: 3rem;*/
+
+}
+
+.contacto-text button {
+  vertical-align: super;
+  margin-top: 1.5rem;
+  margin-left: 2rem;
+  background-color: #21018b;
+}
+
+/*investigaciones section*/
+
+section.investigaciones {
+  background-color: #f7f7f7;
+  border-top: 2px dotted #3a32f9;
+  border-bottom: 2px dotted #3a32f9;
+}
+
+.investigaciones h2 {
+  color: #150b58;
+}
+
+.investigaciones-p {
+  color: #2d1c9d;
+}
+
+div.investigaciones-card {
+  width: 100%;
+  height: 17rem;
+}
+
+div.investigaciones-card img {
+  height: auto;
+}
+
+.investigaciones p {
+  font-size: 1rem;
+}
+
+/*footer*/
+
+footer {
+  background-color: #21018b;
+}
 
 
 /*Card styles*/
@@ -166,6 +217,10 @@ div.proyecto p {
 
 .card-pad {
   padding: 1rem;
+}
+
+.card-pad-ext {
+  padding: 1rem 1rem 1rem 0;
 }
 
 .card-pad button {
@@ -198,7 +253,19 @@ button {
   cursor: pointer;
 }
 
+h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  padding: 2rem 0 2rem 0;
+}
+
 /* Custom re-usable styles */
+
+div.content {
+  display: block;
+  margin: 2rem auto 2rem auto;
+  width: 85%;
+}
 
 .block {
   display: block;
@@ -267,7 +334,6 @@ button {
   div.explore-card {
     width: 100%;
   }
-
   .proyecto-info {
     position: relative;
   }
@@ -285,8 +351,18 @@ button {
   .card-image {
     display: none;
   }
+  .contacto button {
+    margin-left: auto;
+  }
+  .explore-card button {
+    width: 85%;
+  }
 
+  .investigaciones .card p {
+    font-size: 1.2rem;
+  }
 }
+
 
 @media only screen and (max-width: 870px) {
   .explore-card.button-link {
@@ -300,6 +376,11 @@ button {
     color: #2b00f7;
     background-color: #fff;
   }
+
+  div.investigaciones-card {
+    height: 14rem;
+  }
+
 }
 
 
@@ -315,10 +396,29 @@ button {
     display: block;
     margin: auto;
   }
+
+  .explore-card {
+    height: 10rem;
+  }
+  .explore-card button {
+    width: auto;
+  }
+  .card-pad {
+    padding: 1rem;
+  }
 }
 
-@media only screen and (max-width: 500px) {
-  div.proyectos-content {
+@media only screen and (max-width: 700px) {
+  div.content {
     width: 95%;
   }
+  div.card-pad h3 {
+    font-size: 2rem;
+    -webkit-margin-before: .2rem;
+    -webkit-margin-after: .2rem;
+  }
+  div.investigaciones-card {
+    height: 10rem;
+  }
+
 }
