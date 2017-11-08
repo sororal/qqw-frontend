@@ -203,6 +203,25 @@ div.investigaciones-card img {
 
 footer {
   background-color: #21018b;
+  padding: 3rem 0 3rem 5rem;
+}
+
+footer p {
+  color: #fff;
+}
+
+footer p:first-child {
+  margin-top: 2rem;
+}
+
+footer a {
+  text-decoration: none;
+  color: #fff;
+}
+
+footer img {
+  margin-top: 1rem;
+  margin-right: 1rem;
 }
 
 
