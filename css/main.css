@@ -24,10 +24,16 @@ div.landing-header-content {
   margin: auto;
 }
 
-div.landing-header-content img {
-  height: 10rem;
+img.logo {
+  height: 8rem;
   width: auto;
   vertical-align: middle;
+}
+
+img.name {
+  width: 25rem;
+  vertical-align: middle;
+  margin-left: 1rem;
 }
 
 div.landing-header-content h1 {
@@ -364,6 +370,12 @@ div.content {
 }
 
 @media only screen and (max-width: 1042px) {
+  input[type=text].landing-search-inputtext {
+    width: 70%;
+  }
+  input[type=submit].landing-search-inputtext {
+    width: auto;
+  }
   div.explore-card {
     height: 14rem;
   }
@@ -387,6 +399,10 @@ div.content {
   .explore-card.button-link {
     padding: 9px;
     font-size: .7rem;
+  }
+  div.landing-header-content {
+    /*padding: 4rem;*/
+    width: 90%;
   }
 }
 
@@ -438,6 +454,14 @@ div.content {
   }
   div.investigaciones-card {
     height: 10rem;
+  }
+
+  div.landing-header-content {
+    padding: 0;
+  }
+  img.name {
+    width: 100%;
+    margin-left: 0;
   }
 
 }
