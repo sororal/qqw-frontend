@@ -13,7 +13,9 @@
   </head>
   <body>
     <header>
-      <div class="bar"></div>
+      <nav class="nav bar">
+        <a href="#"><img class="logo-horizontal" src="images/logo-horizontal.svg" alt="Logo QuiénEsQuién.wiki"></a>
+      </nav>
       <div class="landing-jumbotron">
         <!-- <img src="images/fondo1.png" alt="Fondo quien es quién wiki"> -->
         <div class="landing-header-content">
@@ -174,5 +176,23 @@
         </div>
       </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+      $(window).scroll(function() {
+        if ($(document).scrollTop() > 100) {
+          $('nav').addClass('shrink');
+        } else {
+          $('nav').removeClass('shrink');
+        }
+      });
+
+      $(window).scroll(function() {
+        if ($(document).scrollTop() > 10) {
+          $('logo').addClass('shrink');
+        } else {
+          $('logo').removeClass('shrink');
+        }
+      });
+    </script>
   </body>
 </html>

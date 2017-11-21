@@ -1,10 +1,37 @@
 /*header section*/
 
+
+
 .bar {
-  height: 2rem;
-  width: 100;
+  position: fixed;
+  z-index: 1999;
+  top: 0;
+  height: 5rem;
+  width: 100%;
+  background-color: transparent;
+  padding: 1rem;
+  transition: all 0.3s ease;
+  transition-delay: initial;
+  height: 4rem;
+}
+
+.shrink {
+  display: block;
+  height: 4rem !important;
   background-color: #110046;
 }
+
+.shrink img.logo-horizontal {
+  width: 10rem;
+}
+
+
+img.logo-horizontal {
+  width: 12rem;
+  transition: all .5s ease;
+}
+
+
 
 div.landing-jumbotron {
   background: url(../images/fondo-home.png) no-repeat center center fixed;
