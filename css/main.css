@@ -29,6 +29,7 @@
 img.logo-horizontal {
   width: 12rem;
   transition: all .5s ease;
+  background-color: transparent;
 }
 
 div.jumbotron-container {
