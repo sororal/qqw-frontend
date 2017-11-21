@@ -31,10 +31,15 @@ img.logo-horizontal {
   transition: all .5s ease;
 }
 
-
+div.jumbotron-container {
+  background-color: white;
+  overflow: hidden;
+  z-index: 50;
+  height: 100vh;
+}
 
 div.landing-jumbotron {
-  background: url(../images/fondo-home.png) no-repeat center center fixed;
+  background: url(../images/fondo-home.png) no-repeat center center #102026;
   height: auto;
   width: 100%;
   -webkit-background-size: cover;
