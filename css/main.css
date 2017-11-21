@@ -246,6 +246,7 @@ footer {
 
 footer p {
   color: #fff;
+  line-height: 1.5rem;
 }
 
 footer p:first-child {
@@ -313,14 +314,20 @@ button {
 h2 {
   font-size: 2.5rem;
   font-weight: bold;
-  padding: 2rem 0 2rem 0;
+  padding: 1rem 0;
+  margin-bottom: 3rem;
+}
+
+section {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 /* Custom re-usable styles */
 
 div.content {
   display: block;
-  margin: 2rem auto 2rem auto;
+  margin: auto;
   width: 85%;
 }
 
