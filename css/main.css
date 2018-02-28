@@ -603,6 +603,10 @@ hr {
 }
 
 @media only screen and (max-width: 700px) {
+  div.landing-header-content p {
+    font-size: 1.2rem;
+    text-align: left;
+  }
   div.content {
     width: 95%;
   }
@@ -621,6 +625,21 @@ hr {
   img.name {
     width: 100%;
     margin-left: 0;
+  }
+  .shrink img.logo-horizontal {
+    width: 7rem;
+    margin-top: 1¡.7rem;
+  }
+
+  input[type=text].nav-search-inputtext {
+    width: 7rem;
+    padding: 10px 10px;
+    border-color: #2b00f7;
+  }
+
+  input[type=submit].nav-search-inputtext {
+      width: 5rem;
+      padding: 11px 6px;
   }
 
 }
