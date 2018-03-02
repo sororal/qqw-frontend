@@ -180,7 +180,8 @@ div.card-pad h4 {
 /*Proyecto styles*/
 
 section.proyectos {
-  background-color: #21018b;
+  /* background-color: #21018b; */
+  background-color: #110046;
 }
 
 .proyectos h2 {
