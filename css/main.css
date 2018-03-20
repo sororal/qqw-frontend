@@ -177,6 +177,43 @@ div.card-pad h4 {
   color: #5c5c5c;
 }
 
+/* Data source styles */
+section.data-sources {
+  background-color: #f7f7f7;
+}
+
+.data-sources h2 {
+  color: #150b58;
+}
+img.sources-icons {
+  width: 10rem;
+}
+
+.triplet-wrapper {
+  position: relative;
+  height: 24rem;
+  padding: 2rem;
+}
+.triplet {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: left;
+  margin: 1.5rem auto;
+  color: #150b58;
+}
+
+.triplet-text {
+  text-align: justify;
+  color: 	#686868;
+}
+
+.triplet-last-update {
+  font-size: .7rem;
+  color: #808080;
+  text-align: left;
+  position: absolute;
+  bottom: 0;
+}
 /*Proyecto styles*/
 
 section.proyectos {

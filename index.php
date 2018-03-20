@@ -12,9 +12,12 @@
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
+
     <?php include 'jumbotron.php'; ?>
     <main>
       <?php include 'explore-data.php'; ?>
+
+      <?php include 'data-sources.php'; ?>
 
       <?php include 'proyectos.php'; ?>
 
