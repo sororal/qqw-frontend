@@ -464,8 +464,196 @@ section {
   padding-bottom: 5rem;
 }
 
+/* for template pages */
+div.body-content {
+  margin-top: 3rem;
+  padding: 2rem;
+}
+div.document-header {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 1rem;
+}
+h2.document-title {
+  color: #21018b;
+  font-size: 2rem;
+  margin: 0;
+}
 
+p.document-description {
+  padding: 1rem 0;
+  font-size: .8rem;
+  color: #585858;
+}
 
+.filter-bar {
+  background-color: #F7F7F7;
+  border-color: #9C9C9C;
+  border-width: 1px;
+  border-style: solid;
+  margin: 0 1rem 1rem 0;
+  font-size: .8rem;
+  padding: 1rem;
+}
+
+.search-title {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #21018b;
+  margin-top: 1rem;
+  margin-bottom: .5rem;
+  line-height: 1.1rem;
+}
+
+form.filter-form input[type="text"] {
+  padding: 5px;
+  width: 85%;
+  margin-right: 5px;
+  border-color: #D3D3D3;
+  border-style: solid;
+  border-width: 1px;
+}
+
+form.filter-form input[type="date"] {
+  padding: 5px 5px 5px 25px;
+  width: 85%;
+  background-image: url('../images/calendar.png');
+  background-repeat: no-repeat;
+  background-position: 6px;
+  border-width: 1px;
+  border-color: #D3D3D3;
+  border-style: solid;
+}
+
+input[type="date"]::placeholder {
+  text-transform: uppercase;
+  color: red;
+}
+
+::placeholder {
+  text-transform: uppercase;
+}
+form.filter-form input[type="text"].search-amount {
+  width: 30%;
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+select.search-select {
+  height: 34px;
+  font-size: .8rem;
+  text-transform: uppercase;
+  color: 	#808080;
+  border-radius: 0;
+  border-style: solid;
+  border-width: 1px;
+}
+.form-control {
+  height: 25px;
+  vertical-align: middle;
+}
+.selected-block {
+  margin-bottom: .8rem;
+}
+.selected-form-text {
+  color: #9C9C9C;
+  width: 85%;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.search-label {
+  color: #9C9C9C;
+  text-transform: uppercase;
+  margin-bottom: .3rem;
+  margin-top: .8rem;
+  line-height: 1.2rem;
+}
+
+.selected-form-text p {
+  display: inline-block;
+  word-wrap: break-word;
+  vertical-align: middle;
+}
+
+fieldset {
+  margin-bottom: 1rem;
+}
+
+input[type="submit"].search-submit {
+  background-color: #21018b;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  box-shadow: 2px 2px 7px grey;
+}
+
+/* search results */
+
+p.search-terms-text {
+  font-size: .9rem;
+  font-weight: bold;
+  color: #21018b;
+  line-height: 1.8rem;
+}
+
+p.search-terms-text span {
+  color: #fff;
+  background-color: #21018b;
+  border-radius: 7px;
+  font-weight: 300;
+  padding: .2rem .5rem .2rem .7rem;
+  margin-right: .2rem;
+}
+
+div.search-card {
+  border-bottom: 1px dashed #4d29ff;
+  padding: 1.5rem 0;
+}
+
+.search-results-header {
+  display: flex;
+  align-items: center;
+}
+.search-result-title {
+  font-weight: bold;
+  color: #5c5c5c;
+}
+
+.search-result-emph {
+  color: #2900f5;
+  font-family: monospace;
+  font-size: 2.5rem;
+}
+
+.search-result-emph-complementary {
+  color: #2900f5;
+  font-family: monospace;
+  font-size: 1.3rem;
+}
+
+.search-result-mono-gray {
+  font-family: monospace;
+  color: #bebfc1;
+  font-size: 1rem;
+  display: inline-block;
+}
+
+a.see-contract {
+  padding: .5rem 1rem;
+  background-color: #2900f5;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+
+}
+
+.search-results-last-row {
+  margin-top: 1.5rem;
+}
 /* Custom re-usable styles */
 
 div.content {
@@ -473,6 +661,7 @@ div.content {
   margin: auto;
   width: 85%;
 }
+
 
 .block {
   display: block;

@@ -1,4 +1,4 @@
-<nav class="nav bar">
+<nav class="nav bar" id='navbar'>
       <a href="#"><img class="logo-horizontal" src="images/logo-h.png" alt="Logo QuiénEsQuién.wiki"></a>
 
     <form class="nav-form" action="subpage.html" method="get">
